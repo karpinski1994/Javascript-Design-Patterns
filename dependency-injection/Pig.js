@@ -1,4 +1,4 @@
-const Heart = require('./Heart');
+const Heart = require('./services/Heart');
 
 class Pig {
   constructor(heart){
