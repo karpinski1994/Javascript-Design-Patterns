@@ -18,6 +18,10 @@ class PersonsService {
   subscribe(observer) {
     this.observers.push(observer);
   }
+  unsubscribe(observer) {
+    const rmvdObsId = this.observers.findIndex(obs => observer);
+    this.observers.splice(rmvdObsId, 1);
+  }
   notifyAll() {
     this.observers.forEach(obs => obs.update(this.persons));
   }

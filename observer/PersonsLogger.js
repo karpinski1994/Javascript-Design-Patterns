@@ -9,8 +9,7 @@ class PersonsLogger {
     this.logUpdate();
   }
   logUpdate() {
-    console.log('PERSONS UPDATED');
-    console.log('Current local persons:', this.persons)
+    console.log('PersonsLoogger persons:', this.persons)
   }
 }
 

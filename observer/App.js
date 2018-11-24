@@ -11,6 +11,8 @@ personsService.add({
   id: '1213asd123'
 });
 
+personsService.unsubscribe(personsLogger);
+
 personsService.add({
   name: 'Jan Kowalski',
   id: '12213asddsa123'
